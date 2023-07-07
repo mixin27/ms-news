@@ -1,0 +1,236 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-07-07T09:28:38.293Z",
+  "__export_source": "insomnia.desktop.app:v2023.4.0",
+  "resources": [
+    {
+      "_id": "req_f76485bdaa154ed48a9c255737e8271b",
+      "parentId": "fld_b0e96a7e50b5432eb56f34fcf8c51448",
+      "modified": 1688721450228,
+      "created": 1688721115093,
+      "url": "{{baseUrl}}/sources",
+      "name": "New Request",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_dd61336165cb40a7b47cbd3bf3eaaa0e",
+          "name": "access_key",
+          "value": "{{accessKey}}",
+          "description": ""
+        },
+        {
+          "id": "pair_ba8195c5af854631b8b27b85e30490e8",
+          "name": "search",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1688721115093,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b0e96a7e50b5432eb56f34fcf8c51448",
+      "parentId": "wrk_ae163d5ab924413cb3e1f72619a1bf81",
+      "modified": 1688721112826,
+      "created": 1688721112826,
+      "name": "News Sources",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1688721112826,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_ae163d5ab924413cb3e1f72619a1bf81",
+      "parentId": null,
+      "modified": 1688719653052,
+      "created": 1688719653052,
+      "name": "MediaStack News APIs",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_e94b96b2ca374be1bc3087f8d80e55fc",
+      "parentId": "fld_39afd0ec32b2474ea44cb58d1fcee420",
+      "modified": 1688720922837,
+      "created": 1688720875395,
+      "url": "{{baseUrl}}/news",
+      "name": "New Request",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_26140be32a8c41ab8087ada6ef4e2908",
+          "name": "access_key",
+          "value": "{{accessKey}}",
+          "description": ""
+        },
+        {
+          "id": "pair_1c97a8abb0c64247ad1b4682e375a0a5",
+          "name": "date",
+          "value": "2023-06-10",
+          "description": ""
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1688720875395,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_39afd0ec32b2474ea44cb58d1fcee420",
+      "parentId": "wrk_ae163d5ab924413cb3e1f72619a1bf81",
+      "modified": 1688720871887,
+      "created": 1688720871887,
+      "name": "Historical News",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1688720871887,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_7933a98089a8467bac3ede2f859206b7",
+      "parentId": "fld_4dd81423b5c24a3aa5124a3540c95d3f",
+      "modified": 1688720090077,
+      "created": 1688719998248,
+      "url": "{{baseUrl}}/news",
+      "name": "Live News By Countries",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_e46dcce717df4cfe888f0eab2a7b68e2",
+          "name": "access_key",
+          "value": "{{accessKey}}",
+          "description": ""
+        },
+        {
+          "id": "pair_18a250469f414d518312eb4fd32a5ec7",
+          "name": "countries",
+          "value": "us, gb, de",
+          "description": ""
+        },
+        {
+          "id": "pair_7d6e122a660c404391afac11ad4e8449",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1688719998248,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4dd81423b5c24a3aa5124a3540c95d3f",
+      "parentId": "wrk_ae163d5ab924413cb3e1f72619a1bf81",
+      "modified": 1688719805004,
+      "created": 1688719805004,
+      "name": "Live News",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1688719805004,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_a762bccbb73449899c3629b99bd10a15",
+      "parentId": "fld_4dd81423b5c24a3aa5124a3540c95d3f",
+      "modified": 1688720078645,
+      "created": 1688719808861,
+      "url": "{{baseUrl}}/news",
+      "name": "Live News",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_ba6ff1757ae2496ea081ea6aac5f47d1",
+          "name": "access_key",
+          "value": "{{accessKey}}",
+          "description": ""
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1688719808861,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_3de8f4e49281f384df41d72092662aff31ea32cb",
+      "parentId": "wrk_ae163d5ab924413cb3e1f72619a1bf81",
+      "modified": 1688719697622,
+      "created": 1688719653056,
+      "name": "Base Environment",
+      "data": { "baseUrl": "" },
+      "dataPropertyOrder": { "&": ["baseUrl"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1688719653056,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_3de8f4e49281f384df41d72092662aff31ea32cb",
+      "parentId": "wrk_ae163d5ab924413cb3e1f72619a1bf81",
+      "modified": 1688719653072,
+      "created": 1688719653072,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "env_d2490505146b446f97f27a231f6d3c2e",
+      "parentId": "env_3de8f4e49281f384df41d72092662aff31ea32cb",
+      "modified": 1688719777934,
+      "created": 1688719708506,
+      "name": "MediaStack",
+      "data": {
+        "baseUrl": "http://api.mediastack.com/v1",
+        "accessKey": "8d9c896b91e96e81417344411fecc928"
+      },
+      "dataPropertyOrder": { "&": ["baseUrl", "accessKey"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1688719708506,
+      "_type": "environment"
+    }
+  ]
+}
