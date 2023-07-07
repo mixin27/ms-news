@@ -1,0 +1,114 @@
+{
+  "pagination": {
+    "limit": 25,
+    "offset": 0,
+    "count": 13,
+    "total": 13
+  },
+  "data": [
+    {
+      "code": "abcmoney",
+      "name": "ABC Money",
+      "category": "business",
+      "country": "uk",
+      "language": "en",
+      "url": "www.abcmoney.co.uk"
+    },
+    {
+      "code": "abc-7",
+      "name": "abc-7",
+      "category": "general",
+      "country": "us",
+      "language": "en",
+      "url": "www.abc-7.com"
+    },
+    {
+      "code": "abc-au",
+      "name": "ABC AU",
+      "category": "general",
+      "country": "au",
+      "language": "en",
+      "url": "http://abc.net.au/"
+    },
+    {
+      "code": "abc-news-au",
+      "name": "ABC News (AU)",
+      "category": "general",
+      "country": "au",
+      "language": "en",
+      "url": "http://www.abc.net.au"
+    },
+    {
+      "code": "abc-news",
+      "name": "ABC News",
+      "category": "general",
+      "country": "us",
+      "language": "en",
+      "url": "https://abcnews.go.com"
+    },
+    {
+      "code": "abcmoney",
+      "name": "ABC Money",
+      "category": "business",
+      "country": "uk",
+      "language": "en",
+      "url": "www.abcmoney.co.uk"
+    },
+    {
+      "code": "abc",
+      "name": "ABC",
+      "category": "general",
+      "country": "es",
+      "language": "es",
+      "url": "www.abcdesevilla.es"
+    },
+    {
+      "code": "abc",
+      "name": "ABC",
+      "category": "general",
+      "country": "es",
+      "language": "es",
+      "url": "abcblogs.abc.es"
+    },
+    {
+      "code": "abc",
+      "name": "ABC",
+      "category": "general",
+      "country": "es",
+      "language": "es",
+      "url": "www.abc.es"
+    },
+    {
+      "code": "abc",
+      "name": "ABC",
+      "category": "general",
+      "country": "es",
+      "language": "es",
+      "url": "www.abcdesevilla.es"
+    },
+    {
+      "code": "abc",
+      "name": "ABC",
+      "category": "general",
+      "country": "es",
+      "language": "es",
+      "url": "abcblogs.abc.es"
+    },
+    {
+      "code": "abc",
+      "name": "ABC",
+      "category": "general",
+      "country": "es",
+      "language": "es",
+      "url": "www.abc.es"
+    },
+    {
+      "code": "abc-nyheter",
+      "name": "ABC Nyheter",
+      "category": "general",
+      "country": "no",
+      "language": "no",
+      "url": "http://abcnyheter.no/"
+    }
+  ]
+}
