@@ -1,0 +1,69 @@
+# import_sorter
+format:
+  - dart format lib .
+  - dart run import_sorter:main
+
+# build_runner
+gen:
+  - dart run build_runner build
+gen:once:
+  - dart run build_runner build -d
+gen:watch: dart run build_runner watch -d
+
+# Build APK
+build:apk:dev:
+  - flutter clean
+  - flutter pub get
+  - flutter build apk --split-per-abi --flavor development -t lib/main_development.dart
+
+build:apk:stg:
+  - flutter clean
+  - flutter pub get
+  - flutter build apk --split-per-abi --flavor staging -t lib/main_staging.dart
+
+build:apk:prod:
+  - flutter clean
+  - flutter pub get
+  - flutter build apk --split-per-abi --flavor production -t lib/main_production.dart
+
+build:aab:dev:
+  - flutter clean
+  - flutter pub get
+  - flutter build appbundle --flavor development -t lib/main_development.dart
+
+# Build AAB
+build:aab:stg:
+  - flutter clean
+  - flutter pub get
+  - flutter build appbundle --flavor staging -t lib/main_staging.dart
+
+build:aab:prod:
+  - flutter clean
+  - flutter pub get
+  - flutter build appbundle --flavor production -t lib/main_production.dart
+
+# clean
+clean:
+  - flutter clean
+  - flutter pub get
+
+purge:
+  - pod deintegrate
+  #- rm Flutter/Flutter.podspec
+  - flutter clean
+  - flutter pub get
+  #- pod install
+  #- flutter run
+
+purge:all:
+  - pod deintegrate
+  - rm Flutter/Flutter.podspec
+  - flutter clean
+  - flutter pub cache repair
+  - flutter pub get
+  #- pod install
+  - flutter run
+
+start:ios:
+  - xcrun simctl list
+  - open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/
